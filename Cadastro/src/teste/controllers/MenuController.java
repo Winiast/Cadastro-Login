@@ -3,6 +3,8 @@ package teste.controllers;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+import javax.swing.JOptionPane;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -23,12 +25,18 @@ public class MenuController {
 
         try {
             usuarioDao.insert(usuario);
+            JOptionPane.showMessageDialog(null, "Deu certo", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (SQLException ex) {
             System.out.println("ERRO" + ex.getMessage());
         }
-        Usuario usuarionovo = new Usuario("Dirceu", "12345");
-        usuarioDao.update(usuario);
+        Usuario usuarionovo = new Usuario(17, "teste", "123");
+        usuarioDao.update(usuarionovo);
+
+        usuarioDao.delete(usuarionovo);
+        usuarioDao.delete(usuario);
+        usuarioDao.delete(usuario);
+        usuarioDao.delete(usuario);
     }
 
 }
