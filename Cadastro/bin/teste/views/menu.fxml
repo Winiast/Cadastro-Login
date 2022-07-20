@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teste.controllers.MenuController">
+   <children>
+      <Label layoutX="277.0" layoutY="88.0" text="Menu">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="100.0" layoutY="224.0" mnemonicParsing="false" text="Cadastrar Produto" />
+      <Button layoutX="355.0" layoutY="224.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="Fazer Pedido" />
+      <Button fx:id="teste" layoutX="119.0" layoutY="138.0" mnemonicParsing="false" onAction="#executarTeste" text="Teste" />
+   </children>
+</AnchorPane>

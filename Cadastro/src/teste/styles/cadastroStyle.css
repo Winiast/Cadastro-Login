@@ -1,0 +1,37 @@
+#tela {
+  -fx-background-color: #1d1d1d;
+}
+
+#cadastroLabel {
+  -fx-font-size: 24pt;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-text-fill: white;
+  -fx-opacity: 0.6;
+  -fx-border-color: white;
+  -fx-padding: 5px;
+  -fx-border-radius: 5%;
+  -fx-alignment: center;
+}
+
+#labelh2 {
+  -fx-font-size: 11pt;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-text-fill: white;
+  -fx-opacity: 0.6;
+  -fx-alignment: center;
+  -fx-margin: 40px;
+}
+
+#inputs {
+  -fx-font-size: 11pt;
+  -font-color: black;
+  -fx-font-family: "Segoe UI Semibold";
+  -fx-opacity: 0.6;
+  -fx-alignment: center;
+  -fx-margin: 40px;
+}
+
+#inputs:focused {
+  -fx-background-color: white;
+  -fx-opacity: 1;
+}
